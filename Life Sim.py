@@ -36,3 +36,19 @@ class Player:
             print(f"\n{self.name} takes a well deserved nap!")
             print("\nEnergy +40!")
             self.energy += 40
+
+    def eat(self):
+        if self.energy >= 100:
+            print(f"\n{self.name} is too full to eat bro..")
+
+        elif self.money < 90:
+            print(f"\n{self.name} is too broke to buy food man..")
+
+        else:
+            print(f"\n{self.name} Devours his food..")
+            print("\nEnergy +100!")
+            print("Money -90...")
+            self.money -= 90
+            self.energy += 100
+            if self.energy > 100:
+                self.energy = 100
