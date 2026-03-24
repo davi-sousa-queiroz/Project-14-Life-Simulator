@@ -16,3 +16,14 @@ class Player:
 
         for key, value in stats.items():
             print(f"{key}: {value}")
+
+    def work(self):
+        if self.energy <= 0:
+            print(f"\n{self.name} is too tired to work bro..")
+
+        else:
+            print(f"{self.name} works all day!")
+            print("\nMoney +100$")
+            print("Energy -10..")
+            self.money += 100
+            self.energy -= 10
