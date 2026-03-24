@@ -62,3 +62,35 @@ class Player:
 
     def birthday(self):
         self.age += 1
+
+
+print("\nWhat is your name?")
+name = input(">>").title()
+print("\nWhat is your last name?")
+last_name = input(">>").title()
+player = Player(name, last_name)
+
+while player.age < 101:
+    player.menu()
+    choice = int(input("\n>>"))
+    player.birthday()
+    if choice == 1:
+        player.show_stats()
+    elif choice == 2:
+        player.work()
+    elif choice == 3:
+        player.eat()
+    elif choice == 4:
+        player.sleep()
+    elif choice == 5:
+        player.exit()
+        player.show_stats()
+        break
+    else:
+        print("That is not a valid option!")
+
+else:
+    print("\nYOU DIED.")
+    player.exit()
+    player.show_stats()
+
