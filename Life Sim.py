@@ -55,3 +55,7 @@ class Player:
 
     def menu(self):
         print("\n1.\tView Stats\n2.\tWork\n3.\tEat\n4.\tSleep\n5.\tExit")
+
+    def exit(self):
+        print(f"\nThanks for playing!")
+        print("Final Stats:")
