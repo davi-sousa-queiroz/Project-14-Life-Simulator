@@ -27,3 +27,12 @@ class Player:
             print("Energy -10..")
             self.money += 100
             self.energy -= 10
+
+    def sleep(self):
+        if self.energy >= 100:
+            print(f"\n{self.name} doesn't want to sleep!")
+
+        else:
+            print(f"\n{self.name} takes a well deserved nap!")
+            print("\nEnergy +40!")
+            self.energy += 40
