@@ -8,7 +8,7 @@ class Player:
         self.energy = 100
 
     def show_stats(self):
-        stats = {"First Name": self.name,
+        stats = {"\nFirst Name": self.name,
                  "Last Name": self.last_name,
                  "Age": self.age,
                  "Money": self.money,
