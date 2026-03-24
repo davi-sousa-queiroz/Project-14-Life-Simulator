@@ -22,7 +22,7 @@ class Player:
             print(f"\n{self.name} is too tired to work bro..")
 
         else:
-            print(f"{self.name} works all day!")
+            print(f"\n{self.name} works all day!")
             print("\nMoney +100$")
             print("Energy -10..")
             self.money += 100
