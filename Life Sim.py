@@ -52,3 +52,6 @@ class Player:
             self.energy += 100
             if self.energy > 100:
                 self.energy = 100
+
+    def menu(self):
+        print("\n1.\tView Stats\n2.\tWork\n3.\tEat\n4.\tSleep\n5.\tExit")
