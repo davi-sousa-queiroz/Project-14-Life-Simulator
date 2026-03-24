@@ -35,7 +35,7 @@ class Player:
         else:
             print(f"\n{self.name} takes a well deserved nap!")
             print("\nEnergy +40!")
-            self.energy += 40
+            self.energy += 5
 
     def eat(self):
         if self.energy >= 100:
