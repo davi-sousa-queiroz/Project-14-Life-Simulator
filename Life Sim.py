@@ -59,3 +59,6 @@ class Player:
     def exit(self):
         print(f"\nThanks for playing!")
         print("Final Stats:")
+
+    def birthday(self):
+        self.age += 1
